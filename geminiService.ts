@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { AIListingResponse } from "../types";
+import { AIListingResponse } from "../types.ts";
 
 export const analyzeImageForListing = async (base64Image: string): Promise<AIListingResponse> => {
   // Initialize GoogleGenAI inside the function right before the API call as per guidelines.
