@@ -1,9 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { AIListingResponse } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export const analyzeImageForListing = async (base64Image: string): Promise<AIListingResponse> => {
+  // Initialize GoogleGenAI inside the function right before the API call as per guidelines.
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   const modelId = "gemini-3-flash-preview"; 
 
   const prompt = `
@@ -58,6 +58,7 @@ export const analyzeImageForListing = async (base64Image: string): Promise<AILis
       },
     });
 
+    // Directly access the .text property from the response object.
     if (response.text) {
       return JSON.parse(response.text) as AIListingResponse;
     }
