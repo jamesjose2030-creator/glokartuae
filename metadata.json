@@ -1,0 +1,7 @@
+{
+  "name": "GloKart - C2C Marketplace",
+  "description": "A smart C2C marketplace for UAE & KSA with AI-powered product listings.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
