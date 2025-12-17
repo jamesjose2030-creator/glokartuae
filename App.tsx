@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Marketplace from './pages/Marketplace';
-import SellItem from './pages/SellItem';
-import ProductDetail from './pages/ProductDetail';
-import AdminDashboard from './pages/AdminDashboard';
-import RegisterSeller from './pages/RegisterSeller';
-import Login from './pages/Login';
-import HowItWorks from './pages/HowItWorks';
-import ContactUs from './pages/ContactUs';
-import FAQ from './pages/FAQ';
-import UserProfileModal from './components/UserProfileModal';
-import { View, Product, Category, Currency, User, Offer, OfferStatus } from './types';
+import Navbar from './components/Navbar.tsx';
+import Marketplace from './pages/Marketplace.tsx';
+import SellItem from './pages/SellItem.tsx';
+import ProductDetail from './pages/ProductDetail.tsx';
+import AdminDashboard from './pages/AdminDashboard.tsx';
+import RegisterSeller from './pages/RegisterSeller.tsx';
+import Login from './pages/Login.tsx';
+import HowItWorks from './pages/HowItWorks.tsx';
+import ContactUs from './pages/ContactUs.tsx';
+import FAQ from './pages/FAQ.tsx';
+import UserProfileModal from './components/UserProfileModal.tsx';
+import { View, Product, Category, Currency, User, Offer, OfferStatus } from './types.ts';
 
 // Initial Mock Data
 const MOCK_PRODUCTS: Product[] = [
